@@ -1,0 +1,140 @@
+/* ===== Global ===== */
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1e293b;
+}
+ 
+/* ===== Layout ===== */
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 30px 20px;
+}
+ 
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0f172a;
+  letter-spacing: 0.5px;
+}
+ 
+/* ===== Card ===== */
+.card {
+  background: #ffffff;
+  padding: 22px;
+  margin-bottom: 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+ 
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+}
+ 
+/* ===== Form ===== */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+ 
+input,
+select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  min-width: 180px;
+  font-size: 14px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+ 
+/* ===== Buttons ===== */
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 5px;
+}
+ 
+button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+ 
+button:active {
+  transform: translateY(0);
+}
+ 
+/* Delete button variant */
+button:last-child {
+  background: #ef4444;
+}
+ 
+button:last-child:hover {
+  background: #dc2626;
+}
+ 
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+ 
+th {
+  background: #eef2ff;
+  color: #3730a3;
+  font-weight: 600;
+  text-align: center;
+}
+ 
+
+td {
+  padding: 12px 10px;
+  text-align: center;
+}
+ 
+tr:hover td {
+  background: #f8fafc;
+}
+ 
+/* ===== Empty text ===== */
+p {
+  color: #64748b;
+  font-size: 14px;
+}
+ 
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+  }
+ 
+  input,
+  select,
+  button {
+    width: 100%;
+  }
+}
