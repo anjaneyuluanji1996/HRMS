@@ -67,7 +67,7 @@ def delete_employee(employeeId: str, db: Session = Depends(get_db)):
  
     db.delete(emp)
     db.commit()
-    return {"message": "Employee deleted"}
+    return {"message": "Employee deleted successfully"}
  
 # ---------------- Attendance ----------------
  
