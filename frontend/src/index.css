@@ -93,8 +93,8 @@ button:last-child {
 button:last-child:hover {
   background: #dc2626;
 }
- 
-/* ===== Table ===== */
+/*  
+table */
 table {
   width: 100%;
   border-collapse: collapse;
